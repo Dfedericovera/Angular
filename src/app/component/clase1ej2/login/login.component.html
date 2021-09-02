@@ -1,0 +1,101 @@
+<body>
+    <div class="wrapper">
+        <!-- Cargar usuarios -->
+<!--         <div class="enviarAlFrente row">
+            <div class="form-check form-check-inline col">
+                <label class="radio" for="inlineRadio1">
+                    <input (click)="cambiarUsuario('admin@admin.com',111111)" type="radio" name="inlineRadioOptions"
+                        id="inlineRadio1" value="option1">
+                    <span>Admin</span>
+                </label>
+            </div>
+            <div class="form-check form-check-inline col">
+                <label class="radio" for="inlineRadio2">
+                    <input (click)="cambiarUsuario('invitado@invitado.com',222222)" type="radio"
+                        name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <span>Invitado</span>
+                </label>
+            </div>
+            <div class="form-check form-check-inline col">
+                <label class="radio" for="inlineRadio3">
+                    <input (click)="cambiarUsuario('usuario@usuario.com',333333)" type="radio" name="inlineRadioOptions"
+                        id="inlineRadio3" value="option3">
+                    <span>Usuario</span>
+                </label>
+            </div>
+            <div class="form-check form-check-inline col">
+                <label class="radio" for="inlineRadio4">
+                    <input (click)="cambiarUsuario('anonimo@anonimo.com',444444)" type="radio" name="inlineRadioOptions"
+                        id="inlineRadio4" value="option3">
+                    <span>Anonimo</span>
+                </label>
+            </div>
+            <div class="form-check form-check-inline col">
+                <label class="radio" for="inlineRadio5">
+                    <input (click)="cambiarUsuario('tester@tester.com',555555)" type="radio" name="inlineRadioOptions"
+                        id="inlineRadio5" value="option3">
+                    <span>Tester</span>
+                </label>
+            </div>
+        </div> -->
+
+        <!-- Form principal -->
+        <div class="container"><!-- -->
+            <form class="form" [formGroup]="ionicForm"  (ngSubmit)="onLogin(email,password)" novalidate>
+                <h1>Bienvenido</h1>
+                <input formControlName="email" type="email" placeholder="Nombre usuario" #email name="nombre">
+                <input formControlName="password" type="password" placeholder="Contraseña" #password name="clave">
+                <button type="submit" id="login-button">Entrar</button>
+                <!-- VALIDACIONS -->
+                <!-- Error messages -->
+                <!-- <span class="error ion-padding ion-text-nowrap"
+                    *ngIf="isSubmitted && errorControl.email.errors?.required">
+                    <ion-row>
+                        <ion-text color="danger">
+                            *Ingrese su email.
+                        </ion-text>
+                    </ion-row>
+                </span>
+                <span class="error ion-padding ion-text-nowrap"
+                    *ngIf="isSubmitted && errorControl.email.errors?.pattern">
+                    <ion-row>
+                        <ion-text color="danger">
+                            *Direccion de correo invalida
+                        </ion-text>
+                    </ion-row>
+                </span>
+                <span class="error ion-padding " *ngIf="isSubmitted && errorControl.password.errors?.required">
+                    <ion-row>
+                        <ion-text color="danger">
+                            *Ingrese su contraseña.
+                        </ion-text>
+                    </ion-row>
+                </span>
+                <span class="error ion-padding ion-text-nowrap" *ngIf="wrongEmail">
+                    <ion-row>
+                        <ion-text color="danger">
+                            *Usuario o contraseña invalido.
+                        </ion-text>
+                    </ion-row>
+                </span> -->
+            </form>
+
+        </div>
+        <!-- Fondo con animacion -->
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+    </div>
+
+
+</body>

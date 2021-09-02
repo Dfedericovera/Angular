@@ -1,0 +1,26 @@
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Edad uno</label>
+            <input [(ngModel)]="edad1" [ngModelOptions]="{standalone: true}" type="number" class="form-control"
+                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="edad 1">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Edad dos</label>
+            <input [(ngModel)]="edad2" [ngModelOptions]="{standalone: true}" type="number" class="form-control"
+                id="exampleInputPassword1" placeholder="edad 2">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Promedio</label>
+            <h2>{{promedio}}</h2>
+            <small id="emailHelp" class="form-text text-muted">Promedio de las edades.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Suma</label>
+            <h2>{{suma}}</h2>
+            <small id="emailHelp" class="form-text text-muted">Suma de las edades.</small>
+        </div>
+        <button type="button" class="btn btn-primary" color="danger" (click)="limpiar()">limpiar</button>
+        <button type="button" class="btn btn-primary" (click)="calcular()">calcular</button>
+    </form>
+</div>
