@@ -1,0 +1,33 @@
+<h1> Aplicando Pipes</h1>
+<p>Pipe hecho en clase: Recibe una variable number si es 1 es Administrador si no es usuario</p>
+<table class="table table-condensed">
+    <thead>
+        <tr>
+            <th>UppercasePipe</th>
+            <th>Hecho en clase</th>
+            <th>LowerCasePipe</th>
+            <th>DatePipe</th>
+            <th>CurrencyPipe</th>
+            <th>DecimalPipe</th>
+            <th>PercentagePipe</th>
+            <th>TiempoTranscurrido</th>
+            <th>Texto Largo</th>
+            <th>Texto Largo Personalizado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{pais | uppercase}} </td>
+            <td>{{tipoUsuario | mipipe}} </td>
+            <td>{{toLower | lowercase}}</td>
+            <td>{{date | date}}</td>
+            <td>{{currency | currency}}</td>
+            <td>{{decimal | number: '.1-2' }}</td>
+            <td>{{percent | percent}}</td>
+            <td>{{tiempoAntiguo |tiempoTranscurrido}}</td>
+            <td>{{miTexto | textoLargo}}</td> 
+            <td>{{miTexto | textoLargoPersonalizado: cantidadDeCaracteresParaMostrar}}</td> 
+        </tr>
+
+    </tbody>
+</table>

@@ -10,6 +10,11 @@ import { Clase1ej1Component } from './component/clase1ej1/clase1ej1.component';
 import { Clase1ej2Component } from './component/clase1ej2/clase1ej2.component';
 import { BienvenidoComponent } from './component/clase1ej2/bienvenido/bienvenido.component';
 import { ErrorComponent } from './component/clase1ej2/error/error.component';
+import { PipesComponent } from './component/pipes/pipes.component';
+import { MipipePipe } from './pipes/mipipe.pipe';
+import { TiempoTranscurridoPipe } from './pipes/tiempo-transcurrido.pipe';
+import { TextoLargoPipe } from './pipes/texto-largo.pipe';
+import { TextoLargoPersonalizadoPipe } from './pipes/texto-largo-personalizado.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { ErrorComponent } from './component/clase1ej2/error/error.component';
     Clase1ej1Component,
     Clase1ej2Component,
     BienvenidoComponent,
-    ErrorComponent,        
+    ErrorComponent,
+    PipesComponent,
+    MipipePipe,
+    TiempoTranscurridoPipe,
+    TextoLargoPipe,
+    TextoLargoPersonalizadoPipe,        
   ],
   imports: [
     BrowserModule,
