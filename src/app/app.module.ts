@@ -15,6 +15,8 @@ import { MipipePipe } from './pipes/mipipe.pipe';
 import { TiempoTranscurridoPipe } from './pipes/tiempo-transcurrido.pipe';
 import { TextoLargoPipe } from './pipes/texto-largo.pipe';
 import { TextoLargoPersonalizadoPipe } from './pipes/texto-largo-personalizado.pipe';
+import { DirectivasComponent } from './component/directivas/directivas.component';
+import { ResaltarDirective } from './directivas/resaltar.directive';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { TextoLargoPersonalizadoPipe } from './pipes/texto-largo-personalizado.p
     MipipePipe,
     TiempoTranscurridoPipe,
     TextoLargoPipe,
-    TextoLargoPersonalizadoPipe,        
+    TextoLargoPersonalizadoPipe,
+    DirectivasComponent,
+    ResaltarDirective,        
   ],
   imports: [
     BrowserModule,
